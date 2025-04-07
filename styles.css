@@ -1,0 +1,120 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  nav {
+    width: 220px;
+    background-color: #222;
+    min-height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #444;
+  }
+  
+  .content {
+    margin-left: 240px;
+    padding: 40px;
+    flex: 1;
+    max-width: 900px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .business-image {
+    max-width: 100%;
+    width: 400px;
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #222;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  /* === Responsive Design === */
+  
+  /* Tablets */
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      position: static;
+      height: auto;
+    }
+  
+    .content {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .business-image {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
